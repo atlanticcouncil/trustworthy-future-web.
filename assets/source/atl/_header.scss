@@ -1,0 +1,140 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+#atl-global-wrapper {
+  .header-spacer {
+    height: 80px;
+  }
+
+  #atl-header-wrapper {
+    background: $true-black;
+    height: 80px;
+    padding-top: 15px;
+
+    #atl-header {
+      background: $true-black;
+
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
+
+      .flex-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @media (min-width: 992px) {
+          justify-content: initial;
+          width: auto;
+        }
+
+        .navbar-brand {
+          &:hover {
+            opacity: 0.5;
+          }
+
+          svg {
+            .st0, .st1 {
+              fill:#FFFFFF;
+              stroke:#FFFFFF;
+              stroke-miterlimit:10;
+            }
+          }
+        }
+      }
+
+      .navbar {
+        background: $true-black;
+      }
+
+      a {
+        font-family: $proximanova;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $true-white;
+
+        &.dropdown-toggle {
+          &:after {
+            border: none;
+          }
+        }
+
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      .dropdown-menu {
+        background: $true-black;
+        border-radius: 0;
+        border: none;
+        margin-left: -8px;
+        top: 55px;
+
+        li {
+          margin: 14px 0;
+        }
+
+        .dropdown-item {
+          span {
+            padding-right: 10px;
+          }
+
+          &:hover {
+            background: $true-black;
+          }
+
+          &.active {
+            background: $true-black;
+            color: $blue;
+          }
+        }
+      }
+
+      .navbar-collapse {
+        flex-grow: initial;
+      }
+
+      .navbar-nav {
+        .nav-item {
+          margin-right: 30px;
+
+          .dropdown-toggle {
+            padding-right: 40px;
+            position: relative;
+
+            &:after {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              display: block;
+              width: 10px;
+              height: 10px;
+              border-right: 2px solid $true-white;
+              border-bottom: 2px solid $true-white;
+              transform: rotate(45deg);
+            }
+
+            &:hover {
+              &:after {
+                border-right: 2px solid $blue;
+                border-bottom: 2px solid $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

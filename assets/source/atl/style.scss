@@ -1,0 +1,89 @@
+@import "../global/variables";
+@import "../global/mixins";
+@import "header";
+@import "hero";
+@import "content";
+@import "footer";
+
+#wpadminbar {
+  display: none !important;
+}
+html.nivo-lightbox-notouch {
+  margin-top: 0 !important;
+}
+
+//=============
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1014px !important;
+  }
+}
+//=============
+
+
+#atl-global-wrapper {
+  * {
+    transition: all 0.3s;
+  }
+
+  ol, ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    > .row {
+      max-width: 990px !important;
+    }
+  }
+
+  .header-spacer {
+    height: 80px;
+  }
+
+  .highlighted-link {
+    font-family: $proximanova;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.11em;
+    font-variant: all-small-caps;
+    color: $true-black;
+    background: $blue;
+    text-decoration: none;
+    padding: 0 2px 2px;
+    border-bottom: 0 !important;
+  }
+
+  .btn {
+    font-family: $proximanova;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $true-black !important;
+    border: 1px solid $blue;
+    background-color: $true-white;
+    border-radius: 1px;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+
+    &.hovered {
+      background-color: $blue;
+      &:hover {
+        background-color: $blue;
+        opacity: 0.75;
+      }
+    }
+  }
+}
