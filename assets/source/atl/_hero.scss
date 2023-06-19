@@ -132,6 +132,10 @@
             color: $true-black;
             text-decoration: none;
             border-bottom: 1px solid $true-black;
+
+            &:hover {
+              opacity: 0.75;
+            }
           }
         }
       }
@@ -179,6 +183,10 @@
           .trust-link a{
             color: $true-black;
             text-decoration: underline;
+
+            &:hover {
+              opacity: 0.75;
+            }
           }
 
           h1 {
