@@ -215,6 +215,12 @@
               opacity: 0.5;
             }
           }
+
+          &.extended {
+            &:before {
+              left: 235px;
+            }
+          }
         }
       }
 
