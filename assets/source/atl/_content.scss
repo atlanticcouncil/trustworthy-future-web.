@@ -135,6 +135,7 @@
             &.active-annex {
               background-color: $blue;
               padding: 2px 0;
+              pointer-events: none;
             }
           }
         }
