@@ -209,7 +209,9 @@
           }
 
           &.extended {
-            left: 235px;
+            &:before {
+              left: 235px;
+            }
           }
         }
       }
