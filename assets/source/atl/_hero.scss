@@ -39,7 +39,7 @@
           font-family: $proximanova;
           font-style: normal;
           font-weight: 700;
-          font-size: calc(max(min(5vw, 50px), 20px));
+          font-size: calc(max(min(5vw, 50px), 28px));
           line-height: 1;
           letter-spacing: 0.2em;
           text-transform: uppercase;
@@ -209,12 +209,27 @@
               margin: 45px 0 0;
             }
 
+            &.annex3 {
+              font-size: 28px;
+              line-height: 40px;
+
+              @media (min-width: 768px) {
+                font-size: 48px;
+                line-height: 60px;
+              }
+
+              @media (min-width: 992px) {
+                font-size: 40px;
+                line-height: 75px;
+              }
+            }
+
             &.annex6 {
               font-size: 28px;
               line-height: 40px;
 
               @media (min-width: 768px) {
-                font-size: 50px;
+                font-size: 48px;
                 line-height: 60px;
               }
 
