@@ -266,6 +266,10 @@
         .download-buttons {
           margin-bottom: 240px;
 
+          @media (min-width: 768px) {
+            display: none;
+          }
+
           a {
             margin-bottom: 15px;
           }
