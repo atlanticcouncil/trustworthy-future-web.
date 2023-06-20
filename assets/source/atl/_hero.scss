@@ -16,6 +16,7 @@
       margin: 0 auto;
 
       @media (min-width: 768px) {
+        padding: 0;
         padding-bottom: 40%;
       }
 
@@ -51,7 +52,7 @@
 
           &.trust {
             top: 80px;
-            left: 50vw;
+            left: 60vw;
             color: $blue;
           }
 
@@ -67,7 +68,7 @@
 
           &.web {
             top: 200px;
-            left: 60vw;
+            left: 70vw;
           }
 
           @media (min-width: 768px) {
@@ -107,8 +108,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding: 15px;
 
         @media (min-width: 992px) {
+          padding: 0;
           bottom: 44px;
         }
 
@@ -204,6 +207,21 @@
               font-size: 50px;
               line-height: 79px;
               margin: 45px 0 0;
+            }
+
+            &.annex6 {
+              font-size: 28px;
+              line-height: 40px;
+
+              @media (min-width: 768px) {
+                font-size: 50px;
+                line-height: 60px;
+              }
+
+              @media (min-width: 992px) {
+                font-size: 40px;
+                line-height: 75px;
+              }
             }
           }
         }

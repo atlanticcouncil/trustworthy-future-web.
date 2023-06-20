@@ -13,11 +13,15 @@ html.nivo-lightbox-notouch {
 }
 
 //=============
-@media (min-width: 1200px) {
+#atl-global-wrapper {
   .container {
-    max-width: 1014px !important;
+    padding: 0 22px;
+    @media (min-width: 1200px) {
+      max-width: 1014px !important;
+    }
   }
 }
+
 //=============
 
 

@@ -43,6 +43,9 @@
 
       &.active {
         color: $blue;
+        .ol-num {
+          color: $blue;
+        }
       }
     }
 
@@ -95,6 +98,12 @@
           .ol-num {
             display: inline-block;
             margin-right: 6px;
+          }
+
+          &:hover {
+            .ol-num {
+              color: $blue;
+            }
           }
         }
       }
