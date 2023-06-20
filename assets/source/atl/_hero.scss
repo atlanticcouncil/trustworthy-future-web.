@@ -120,15 +120,13 @@
           font-family: $proximanova;
           font-style: normal;
           font-weight: 600;
-          font-size: calc(max(min(2.6vw, 25.5px), 14px));
+          font-size: calc(max(min(2.6vw, 22px), 14px));
           line-height: calc(max(min(2.6vw, 25.5px), 14px));
           letter-spacing: 0.1em;
           font-variant: all-small-caps;
           color: $true-black;
-          max-width: 990px;
-          width: 100%;
           text-align: center;
-          padding: 10px 0;
+          padding: 10px 10px;
 
           a {
             color: $true-black;
@@ -195,84 +193,23 @@
             font-family: $proximanova;
             font-style: normal;
             font-weight: 700;
-            //font-size: 36px;
-            //line-height: 40px;
-            font-size: calc(max(min(5vw, 50px), 28px));
-            line-height: 1;
+            font-size: 25px;
+            line-height: 35px;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: $true-white;
             margin: 20px 0 0;
 
             @media (min-width: 768px) {
-              font-size: 50px;
-              line-height: 79px;
+              font-size: 28px;
+              line-height: 48px;
               margin: 45px 0 0;
             }
 
-            //&.annex3 {
-            //  font-size: 28px;
-            //  line-height: 40px;
-            //
-            //  @media (min-width: 768px) {
-            //    font-size: 48px;
-            //    line-height: 60px;
-            //  }
-            //
-            //  @media (min-width: 992px) {
-            //    font-size: 40px;
-            //    line-height: 75px;
-            //  }
-            //}
-
-            //&.annex1 {
-            //  font-size: 28px;
-            //  line-height: 35px;
-            //
-            //  @media (min-width: 768px) {
-            //    font-size: 50px;
-            //    line-height: 65px;
-            //  }
-            //}
-            //
-            //&.annex3 {
-            //  font-size: 32px;
-            //  line-height: 35px;
-            //
-            //  @media (min-width: 768px) {
-            //    font-size: 42px;
-            //    line-height: 75px;
-            //  }
-            //  @media (min-width: 992px) {
-            //    font-size: 50px;
-            //    line-height: 75px;
-            //  }
-            //}
-            //
-            //&.annex5 {
-            //  font-size: 28px;
-            //  line-height: 35px;
-            //
-            //  @media (min-width: 992px) {
-            //    font-size: 50px;
-            //    line-height: 75px;
-            //  }
-            //}
-            //
-            //&.annex6 {
-            //  font-size: 27px;
-            //  line-height: 35px;
-            //
-            //  @media (min-width: 768px) {
-            //    font-size: 48px;
-            //    line-height: 60px;
-            //  }
-            //
-            //  @media (min-width: 992px) {
-            //    font-size: 39px;
-            //    line-height: 75px;
-            //  }
-            //}
+            @media (min-width: 992px) {
+              font-size: 38px;
+              line-height: 58px;
+            }
           }
         }
 
