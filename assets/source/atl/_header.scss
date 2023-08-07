@@ -3,14 +3,35 @@
 
 #atl-global-wrapper {
   .header-spacer {
-    height: 80px;
+    height: 66px;
+    @media (min-width: 992px) {
+      height: 80px;
+    }
   }
 
   #atl-header-wrapper {
     background: $true-black;
-    height: 80px;
     padding-top: 15px;
+    height: 66px;
 
+    @media (min-width: 992px) {
+      height: 80px;
+    }
+
+    .container {
+      &.desktop {
+        display: none;
+      }
+
+      @media (min-width: 992px) {
+        &.desktop {
+          display: block;
+        }
+        &.mobile {
+          display: none;
+        }
+      }
+    }
     #atl-header {
       background: $true-black;
 
@@ -151,6 +172,161 @@
                 border-right: 2px solid $blue;
                 border-bottom: 2px solid $blue;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .mobile-menu-wrapper {
+      svg g * {
+        fill: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .mobile-menu {
+        &-top-level {
+          &.open {
+            .flex-wrapper {
+              justify-content: end;
+
+              .links-flex-wrapper {
+                display: none;
+              }
+            }
+          }
+          .flex-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 7px;
+
+            .links-flex-wrapper {
+              display: flex;
+              width: 225px;
+              height: 26px;
+              position: relative;
+
+              .atl-logo {
+                width: 124px;
+                height: 18px;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+
+              .dfr-logo {
+                width: 68px;
+                height: 22px;
+                position: absolute;
+                bottom: -2px;
+                right: 0;
+              }
+            }
+          }
+
+          &-toggler {
+            background: transparent;
+            border: none;
+            padding: 0;
+            outline: none;
+
+            .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+          }
+        }
+
+        &-expanded-level {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: black;
+          top: -10000px;
+          left: 0;
+          padding-top: 36px;
+          transition: all 0.3s;
+
+          &.open {
+            top: 60px;
+          }
+
+          &-menu {
+            list-style: none;
+
+            &-link,
+            &-text,
+            &-submenu-link {
+              color: #FFF;
+              font-family: $proximanova;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 28.272px;
+              letter-spacing: 1.7px;
+              text-transform: uppercase;
+              display: inline-block;
+            }
+
+            &-link,
+            &-submenu-link {
+              &:hover,
+              &:focus,
+              &:active {
+                color: $blue;
+              }
+            }
+
+            &-text {
+              margin-top: 30px;
+              margin-bottom: 33px;
+            }
+
+            &-submenu {
+              list-style: none;
+            }
+
+            &-submenu-link {
+              margin-bottom: 25px;
+
+              span {
+                padding-right: 10px;
+                color: $blue;
+                font-family: $ibm-plex-mono;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 126.75%; /* 21.548px */
+                letter-spacing: 1.7px;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          &-btn {
+            width: 153px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $blue;
+            color: #000;
+            font-family: $proximanova;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28.272px; /* 166.307% */
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            margin-top: 30px;
+
+            &:hover,
+            &:focus,
+            &:active {
+              opacity: 0.75;
             }
           }
         }

@@ -12,6 +12,17 @@ html.nivo-lightbox-notouch {
   margin-top: 0 !important;
 }
 
+.body {
+  overflow: hidden;
+}
+
+.mobile-hidden {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
 //=============
 #atl-global-wrapper {
   .container {
@@ -42,7 +53,10 @@ html.nivo-lightbox-notouch {
   }
 
   .header-spacer {
-    height: 80px;
+    height: 66px;
+    @media (min-width: 992px) {
+      height: 80px;
+    }
   }
 
   .highlighted-link {
